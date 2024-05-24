@@ -5,7 +5,7 @@ const blockWidth = 100;
 const blockHeight = 20;
 const boardWidth = 560;
 const boardHeight = 300;
-
+let timerId
 
 
 // Get the start page container and button elements
@@ -39,7 +39,8 @@ function startGame() {
   startPage.style.display = "none";
   gameContainer.style.display = "block";
   
-
+// Start the game by calling the moveEyeball function and setting the timerId interval
+timerId = setInterval(moveEyeball, 10);
 
 }
 
