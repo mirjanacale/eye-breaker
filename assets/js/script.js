@@ -169,7 +169,55 @@ function moveEyeball() {
   eyeballCurrentPosition[0] += xDirection;
   eyeballCurrentPosition[1] += yDirection;
   draweyeball();
-  
+
   checkForCollisions();
+}
+
+
+function checkForCollisions() {
+  //check for block collision
+  for (let i = 0; i < blocks.length; i++){
+
+    if
+    (
+      (eyeballCurrentPosition[0] > blocks[i].bottomLeft[0] && eyeballCurrentPosition[0] < blocks[i].bottomRight[0]) &&
+      ((eyeballCurrentPosition[1] + eyeballDiameter) > blocks[i].bottomLeft[1] && eyeballCurrentPosition[1] < blocks[i].topLeft[1]) 
+    )
+      {
+      const allBlocks = Array.from(document.querySelectorAll('.block'))
+      allBlocks[i].classList.remove('block')
+      blocks.splice(i,1)
+      changeDirection()  
+  
+      score++
+      scoreDisplay.innerHTML = score;
+      if (blocks.length == 0) {
+        scoreDisplay.innerHTML = 'You Win!'
+        clearInterval(timerId)
+        document.removeEventListener('keydown', moveUser)
+        showRestartButton();
+      }
+    }
+  }
+  // checks for collision with the wall
+  
+  if (eyeballCurrentPosition[0] >= (boardWidth - eyeballDiameter) || eyeballCurrentPosition[0] <= 0 || eyeballCurrentPosition[1] >= (boardHeight - eyeballDiameter))
+  {
+    changeDirection()
+
+
+  }
+
+  //check for user collision
+  if
+  (
+    (eyeballCurrentPosition[0] > currentPosition[0] && eyeballCurrentPosition[0] < currentPosition[0] + blockWidth) &&
+    (eyeballCurrentPosition[1] > currentPosition[1] && eyeballCurrentPosition[1] < currentPosition[1] + blockHeight ) 
+  )
+  {
+    changeDirection()
+   
+  }
+
 }
 
