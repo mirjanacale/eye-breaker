@@ -122,3 +122,27 @@ function drawUser() {
   user.style.left = currentPosition[0] + "px";
   user.style.bottom = currentPosition[1] + "px";
 }
+
+
+//move user
+
+function moveUser(e) {
+  switch (e.key) {
+    case "ArrowLeft":
+      if (currentPosition[0] > 0) {
+        //fixiranje da user ostane u gridu
+        currentPosition[0] -= 10;
+
+        drawUser();
+      }
+      break;
+    case "ArrowRight":
+      if (currentPosition[0] < boardWidth - blockWidth) {
+        currentPosition[0] += 10;
+        drawUser();
+      }
+      break;
+  }
+}
+
+document.addEventListener("keydown", moveUser);
