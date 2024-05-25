@@ -12,6 +12,10 @@ let timerId
 const userStart = [230, 10];
 let currentPosition = userStart;
 
+
+const eyeballStart = [270, 40];
+let eyeballCurrentPosition = eyeballStart;
+
 // Get the start page container and button elements
 const startPage = document.querySelector(".start-page");
 const startButton = document.querySelector("#start-button");
@@ -124,7 +128,7 @@ function drawUser() {
 }
 
 
-//move user
+//USER MOVE
 
 function moveUser(e) {
   switch (e.key) {
@@ -158,3 +162,6 @@ draweyeball();
 
 
 document.addEventListener("keydown", moveUser);
+
+// MOVEEYEBALL
+
