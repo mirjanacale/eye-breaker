@@ -145,4 +145,16 @@ function moveUser(e) {
   }
 }
 
+
+
+
+// EYEBALL
+
+const eyeball = document.createElement("div");
+eyeball.classList.add("eyeball");
+grid.appendChild(eyeball); //stavljanje lopte u parrent
+draweyeball();
+
+
+
 document.addEventListener("keydown", moveUser);
