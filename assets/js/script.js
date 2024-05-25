@@ -8,6 +8,10 @@ const boardHeight = 300;
 let timerId
 
 
+
+const userStart = [230, 10];
+let currentPosition = userStart;
+
 // Get the start page container and button elements
 const startPage = document.querySelector(".start-page");
 const startButton = document.querySelector("#start-button");
@@ -105,3 +109,16 @@ const blocks = [
   }
   
   addBlocks();
+
+ // USER
+ const user = document.createElement("div");
+ user.classList.add("user");
+
+grid.appendChild(user);
+drawUser();
+
+
+function drawUser() {
+  user.style.left = currentPosition[0] + "px";
+  user.style.bottom = currentPosition[1] + "px";
+}
