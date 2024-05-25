@@ -83,6 +83,18 @@
   transform: translate(-50%, -50%);
 }
 
+@media screen and (min-width: 1200px){
+
+}
 
 
+
+  /* For medium screens (950px to 1200px wide) */
+@media screen and (min-width: 950px) and (max-width: 1200px) {
+
+}
   
+/* For small screens (up to 950px wide) */
+@media screen and (max-width: 950px) {
+  
+}

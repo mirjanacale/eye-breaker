@@ -16,6 +16,9 @@ let currentPosition = userStart;
 const eyeballStart = [270, 40];
 let eyeballCurrentPosition = eyeballStart;
 
+
+//POCETNA STRANICA
+
 // Get the start page container and button elements
 const startPage = document.querySelector(".start-page");
 const startButton = document.querySelector("#start-button");
@@ -128,6 +131,13 @@ function drawUser() {
 }
 
 
+//DRAWEYBALL
+function draweyeball() {
+  eyeball.style.left = eyeballCurrentPosition[0] + "px";
+  eyeball.style.bottom = eyeballCurrentPosition[1] + "px";
+}
+
+
 //USER MOVE
 
 function moveUser(e) {
@@ -199,7 +209,7 @@ function checkForCollisions() {
       }
     }
   }
-  // checks for collision with the wall
+  // COLLISION WALL
   
   if (eyeballCurrentPosition[0] >= (boardWidth - eyeballDiameter) || eyeballCurrentPosition[0] <= 0 || eyeballCurrentPosition[1] >= (boardHeight - eyeballDiameter))
   {
@@ -208,7 +218,7 @@ function checkForCollisions() {
 
   }
 
-  //check for user collision
+  //COLLISION USER
   if
   (
     (eyeballCurrentPosition[0] > currentPosition[0] && eyeballCurrentPosition[0] < currentPosition[0] + blockWidth) &&
@@ -218,6 +228,9 @@ function checkForCollisions() {
     changeDirection()
    
   }
+
+
+  
 
 }
 
