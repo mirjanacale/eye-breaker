@@ -165,3 +165,11 @@ document.addEventListener("keydown", moveUser);
 
 // MOVEEYEBALL
 
+function moveEyeball() {
+  eyeballCurrentPosition[0] += xDirection;
+  eyeballCurrentPosition[1] += yDirection;
+  draweyeball();
+  
+  checkForCollisions();
+}
+
