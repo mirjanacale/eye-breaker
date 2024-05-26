@@ -7,6 +7,9 @@ const boardWidth = 560;
 const boardHeight = 300;
 let timerId
 
+let xDirection = -2;
+let yDirection = 2;
+const eyeballDiameter = 20;
 
 
 const userStart = [230, 10];
@@ -102,7 +105,7 @@ const blocks = [
 
 
 
-
+// ADDBLOCKS
 
 //  loop with Array.prototype.forEach
  function addBlocks() {
@@ -234,3 +237,22 @@ function checkForCollisions() {
 
 }
 
+function changeDirection() {
+  if (xDirection === 2 && yDirection === 2) {
+    yDirection = -2;
+    return;
+  }
+  if (xDirection === 2 && yDirection === -2) {
+    xDirection = -2;
+    return;
+  }
+  if (xDirection === -2 && yDirection === -2) {
+    yDirection = 2;
+    return;
+  }
+  if (xDirection === -2 && yDirection === 2) {
+    xDirection = 2;
+    return;
+  }
+  playBounceSound(); // Play sound on direction change
+}
