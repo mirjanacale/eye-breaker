@@ -6,7 +6,7 @@ const blockHeight = 20;
 const boardWidth = 560;
 const boardHeight = 300;
 let timerId
-
+let score = 0;
 let xDirection = -2;
 let yDirection = 2;
 const eyeballDiameter = 20;
@@ -232,8 +232,18 @@ function checkForCollisions() {
    
   }
 
+//GAME OVER
 
-  
+if (eyeballCurrentPosition[1] <= 0) {
+  clearInterval(timerId); // Stop the interval
+  scoreDisplay.innerHTML = `You lose ,${playerName} ! `;
+
+
+  document.removeEventListener('keydown', moveUser);
+  showRestartButton();
+}
+
+
 
 }
 
@@ -255,4 +265,13 @@ function changeDirection() {
     return;
   }
   playBounceSound(); // Play sound on direction change
+}
+
+
+function  showRestartButton() {
+  restartButton.style.display = "block";
+}
+
+function restartGame() {
+  document.location.reload();
 }
