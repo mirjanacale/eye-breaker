@@ -201,7 +201,7 @@ function checkForCollisions() {
       allBlocks[i].classList.remove('block')
       blocks.splice(i,1)
       changeDirection()  
-  
+      playBounceSound(); // Play sound on block collision
       score++
       scoreDisplay.innerHTML = score;
       if (blocks.length == 0) {
@@ -217,7 +217,7 @@ function checkForCollisions() {
   if (eyeballCurrentPosition[0] >= (boardWidth - eyeballDiameter) || eyeballCurrentPosition[0] <= 0 || eyeballCurrentPosition[1] >= (boardHeight - eyeballDiameter))
   {
     changeDirection()
-
+    playBounceSound(); // Play sound on wall collision
 
   }
 
@@ -229,7 +229,7 @@ function checkForCollisions() {
   )
   {
     changeDirection()
-   
+    playBounceSound(); // Play sound on user collision
   }
 
 //GAME OVER
@@ -237,15 +237,53 @@ function checkForCollisions() {
 if (eyeballCurrentPosition[1] <= 0) {
   clearInterval(timerId); // Stop the interval
   scoreDisplay.innerHTML = `You lose ,${playerName} ! `;
-
-
+  playLoseSound();  //Play lose sound!!
   document.removeEventListener('keydown', moveUser);
   showRestartButton();
 }
 
 
+}
+//SOUND OF EYEBALL AND MUTE
+const bounceSound = document.getElementById("bounce-sound");
+
+
+const muteButton = document.getElementById("mute-button");
+let isMuted = false;
+
+function playBounceSound() {
+  if (!isMuted) {
+  bounceSound.currentTime = 0; // Reset the sound to start
+  bounceSound.play();
+}
+
 
 }
+muteButton.addEventListener("click", toggleMute);
+
+
+muteButton.addEventListener("click", toggleMute);
+
+function toggleMute() {
+  isMuted = !isMuted;
+  muteButton.textContent = isMuted ? "Unmute" : "Mute";
+}
+
+//LOSE SOUND
+
+const loseSound = document.getElementById("lose-sound");
+
+function playLoseSound() {
+  if (!isMuted) {
+    loseSound.currentTime = 0; // Reset the sound to start
+    loseSound.play();
+  }
+}
+
+
+
+
+
 
 function changeDirection() {
   if (xDirection === 2 && yDirection === 2) {
@@ -267,6 +305,8 @@ function changeDirection() {
   playBounceSound(); // Play sound on direction change
 }
 
+
+restartButton.addEventListener("click", restartGame);
 
 function  showRestartButton() {
   restartButton.style.display = "block";
