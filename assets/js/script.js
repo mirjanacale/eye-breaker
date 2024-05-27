@@ -197,17 +197,17 @@ function checkForCollisions() {
       ((eyeballCurrentPosition[1] + eyeballDiameter) > blocks[i].bottomLeft[1] && eyeballCurrentPosition[1] < blocks[i].topLeft[1]) 
     )
       {
-      const allBlocks = Array.from(document.querySelectorAll('.block'))
-      allBlocks[i].classList.remove('block')
-      blocks.splice(i,1)
-      changeDirection()  
+      const allBlocks = Array.from(document.querySelectorAll('.block'));
+      allBlocks[i].classList.remove('block');
+      blocks.splice(i,1);
+      changeDirection();  
       playBounceSound(); // Play sound on block collision
-      score++
+      score++;
       scoreDisplay.innerHTML = score;
       if (blocks.length == 0) {
-        scoreDisplay.innerHTML = 'You Win!'
-        clearInterval(timerId)
-        document.removeEventListener('keydown', moveUser)
+        scoreDisplay.innerHTML = 'You Win!';
+        clearInterval(timerId);
+        document.removeEventListener('keydown', moveUser);
         showRestartButton();
       }
     }
@@ -216,7 +216,7 @@ function checkForCollisions() {
   
   if (eyeballCurrentPosition[0] >= (boardWidth - eyeballDiameter) || eyeballCurrentPosition[0] <= 0 || eyeballCurrentPosition[1] >= (boardHeight - eyeballDiameter))
   {
-    changeDirection()
+    changeDirection();
     playBounceSound(); // Play sound on wall collision
 
   }
@@ -228,7 +228,7 @@ function checkForCollisions() {
     (eyeballCurrentPosition[1] > currentPosition[1] && eyeballCurrentPosition[1] < currentPosition[1] + blockHeight ) 
   )
   {
-    changeDirection()
+    changeDirection();
     playBounceSound(); // Play sound on user collision
   }
 
