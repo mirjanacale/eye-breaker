@@ -332,8 +332,26 @@
 
   /* For medium screens (950px to 1200px wide) */
 @media screen and (min-width: 950px) and (max-width: 1200px) {
+  .grid {
 
+    width: 300%; 
+    max-width: 600px; 
+
+  }
+  .block{
+    
+    width: 90px;
+    height: 20px;
+  }
+  #restart-button{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+  }
 }
+ 
+
+
   
 /* For small screens (up to 950px wide) */
 @media screen and (max-width: 950px) {
