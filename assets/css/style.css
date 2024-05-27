@@ -311,6 +311,20 @@
 
 
 @media screen and (min-width: 1200px){
+  .grid {
+    width: 560px; 
+    height: 300px; 
+  }
+  .block{
+    width: 90px;
+    height: 20px;
+  }
+  #restart-button{
+    position: absolute;
+    left: 45%;
+    
+
+  }
 
 }
 
