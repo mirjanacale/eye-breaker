@@ -49,6 +49,12 @@ function startGame() {
   }
 
 
+// Store the player's name in local storage
+localStorage.setItem("playerName", playerName);
+
+
+
+
   // Remove the start page container
   startPage.style.display = "none";
   gameContainer.style.display = "block";
@@ -57,6 +63,16 @@ function startGame() {
 timerId = setInterval(moveEyeball, 10);
 
 }
+
+// Retrieve the player's name from local storage when the page loads
+document.addEventListener("DOMContentLoaded", function() {
+  const storedPlayerName = localStorage.getItem("playerName");
+  if (storedPlayerName) {
+    document.querySelector("#player-name").value = storedPlayerName;
+  }
+});
+
+
 
 
 
