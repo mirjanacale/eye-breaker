@@ -30,7 +30,7 @@ Eye-bracker is a arcade game where the player controls a paddle to deflect a bou
 ### Player Name Input:
 * The player can type their name in this input area.
 
-![home](readme-img/img10.png)
+![home]()
 
 ### The "Start" button:
  * launches the game.
@@ -119,8 +119,39 @@ When every block is broken, the game pauses and shows a winning message.
 
 
 
+ ## Testing
+  ***
 
- 
+  ### **Initial testing plan**
+
+I started by creating a wireframe for my website and then I began coding in HTML, CSS and JS. After that, I tested each :
+* 
+* Check responsiveness by resizing the browser window.
+* Run tests on different devices/browsers: Chrome, Firefox, Edge. 
+
+
+##  Browser  Compatibility
+
+Eye bracker is designed to be compatible with  Google Chrome, Mozilla Firefox, Microsoft Edge.
+
+| Broswer tested | Intedend appearance | Screenshot |
+| -------------- | :-----------------: | :--------: |
+| Chrome         |      Yes            | ![crom](readme-img/imgcrom.png)      |
+| Firefox        |      Yes            | ![firefox](readme-img/imgfirefox.png)      |
+| Edge           |      Yes            | ![edge](readme-img/imgedge.png)      |
+
+##  Responsiveness Testing
+
+Eye bracker is designed to be compatible with different device sizes.
+
+| Size     | Intedend appearance | Intended responsiveness | Screenshot |
+| -------- | :-----------------: | -----------------------:| :--------: |
+| Mobile   |      Yes            |              Yes        | ![mobil](readme-img/imgmobil.png)      |
+| Tablet   |      Yes            |              Yes        | ![tablet](readme-img/imgtablet.png)      |
+| Desktop  |      Yes            |              Yes        | ![desktop](readme-img/imgdesktop.png)      |
+
+
+
 
 
 ## Deployment
