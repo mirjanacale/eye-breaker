@@ -26,7 +26,7 @@ let eyeballCurrentPosition = eyeballStart;
 const startPage = document.querySelector(".start-page");
 const startButton = document.querySelector("#start-button");
 const gameContainer = document.getElementById("game-container");
-
+const orientationMessage = document.getElementById("orientation-message");
 
 
 let playerName ="";

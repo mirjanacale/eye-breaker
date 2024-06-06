@@ -452,6 +452,11 @@
 
 }
 
+.message{
+  display: flex; /*  message on mobile devices */
+  color: #ffbc03;
+  position: absolute; 
+}
 
 
 
