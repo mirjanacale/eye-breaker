@@ -157,6 +157,53 @@ function draweyeball() {
 }
 
 
+// Add touch controls
+document.addEventListener("touchstart", handleTouchStart, false);
+document.addEventListener("touchmove", handleTouchMove, false);
+
+let touchStartX = null;
+
+function handleTouchStart(e) {
+  const firstTouch = e.touches[0];
+  touchStartX = firstTouch.clientX;
+}
+
+function handleTouchMove(e) {
+  if (!touchStartX) {
+    return;
+  }
+
+  const touchMoveX = e.touches[0].clientX;
+  const touchDiffX = touchStartX - touchMoveX;
+
+  if (touchDiffX > 0) {
+    //  left
+    moveUserByTouch(-20);
+  } else {
+    // right
+    moveUserByTouch(20);
+  }
+
+  touchStartX = null; // Reset 
+}
+
+function moveUserByTouch(offset) {
+  currentPosition[0] += offset;
+
+  // stays within the grid
+  if (currentPosition[0] < 0) {
+    currentPosition[0] = 0;
+  }
+  if (currentPosition[0] > boardWidth - blockWidth) {
+    currentPosition[0] = boardWidth - blockWidth;
+  }
+
+  drawUser();
+}
+
+
+
+
 //USER MOVE
 
 function moveUser(e) {
