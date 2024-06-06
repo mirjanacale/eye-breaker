@@ -53,6 +53,11 @@ function startGame() {
 localStorage.setItem("playerName", playerName);
 
 
+// Check if the device is a mobile 
+if (window.innerWidth < 768) {
+  orientationMessage.style.display = "flex";
+}
+
 
 
   // Remove the start page container
