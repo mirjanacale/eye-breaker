@@ -4,7 +4,7 @@
 (By Mirjana Cale)
 ***
 
-![amiresponsive](readme-img/imgmain.png)
+![amiresponsive](readme-img/Screenshot 2024-06-07 193506.png)
 
 
 
@@ -205,7 +205,7 @@ Eye bracker is designed to be compatible with different device sizes.
 
 
 
- 
+
 
 
 ## Deployment
