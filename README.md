@@ -21,7 +21,22 @@
 ## Introduction
 Eye-bracker is a arcade game where the player controls a paddle to deflect a bouncing eyeball. The goal is to smash a wall of colored bricks by hitting them with the eyeball.The paddle moves horizontally.It's a classic that continues to captivate players of all ages.
 
+  ## How to Play
+
 ***
+
+* Enter your name on the start screen.
+* Click the "Start Game" button.
+* If you're on a mobile device, turn your device horizontally for the best experience.
+* Use the arrow keys or touch controls to move the paddle left and right.
+* Bounce the eyeball to break all the blocks.
+* Try to clear all the blocks to win!
+
+
+
+
+
+
 
 # Existing Features
 ***
@@ -125,9 +140,38 @@ When every block is broken, the game pauses and shows a winning message.
   ### **Initial testing plan**
 
 I started by creating a wireframe for my website and then I began coding in HTML, CSS and JS. After that, I tested each :
-* 
+***
+
 * Check responsiveness by resizing the browser window.
 * Run tests on different devices/browsers: Chrome, Firefox, Edge. 
+
+
+
+
+## Testing
+***
+| Page | Test | Pass/Fail |
+| :----| :----| :--------:|
+| All  |  Ensure the start screen appears with a prompt to enter the player's name. | Pass |
+| All  | Verify the "Start Game" button is visible and clickable.  | Pass |
+| All  | Check that the player's name is stored in local storage and displayed correctly. | Pass |
+| All  | If on a mobile device, check that the orientation message appears when in portrait mode. | Pass |
+| All  | Verify that the message disappears when the device is turned horizontally and reappears if turned back to portrait. | Pass |
+| Touch controls  | Use touch controls on mobile devices to move the paddle and verify responsiveness. | Pass |
+| Eyball direction| Check that the eyeball changes direction upon collision with the paddle or walls. | Pass | 
+| Blocks collision| Confirm that blocks are removed upon collision with the eyeball. | Pass |
+| Menu |Ensure the score increments correctly when a block is hit.  | Pass |
+| Menu | After losing or winning, verify that clicking the restart button reloads the game correctly. | Pass |
+| Game's behavior | Test the game's behavior when switching between portrait and landscape modes during gameplay. | Pass |
+
+
+
+
+
+
+
+
+
 
 
 ##  Browser  Compatibility
@@ -151,7 +195,17 @@ Eye bracker is designed to be compatible with different device sizes.
 | Desktop  |      Yes            |              Yes        | ![desktop](readme-img/imgdesktop.png)      |
 
 
+ 
 
+
+
+
+
+
+
+
+
+ 
 
 
 ## Deployment
