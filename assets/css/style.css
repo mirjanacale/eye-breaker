@@ -514,7 +514,22 @@ font-size: 16px;
 }
 }
 
-
+.error-page {
+  text-align: center;
+  font-size: 25px;
+  color: #f00;
+  margin-top: 40px;
+  background-color: #ffbc03;
+ 
+ }
+ a {
+ text-decoration:underline;
+ font-size: 40px;
+ color:rgb(124, 54, 255);
+ text-align: center;
+ background-color: #ffbc03;
+ }
+ 
 
 
 
