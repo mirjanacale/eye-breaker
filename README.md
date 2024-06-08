@@ -33,7 +33,43 @@ Eye-bracker is a arcade game where the player controls a paddle to deflect a bou
 * Try to clear all the blocks to win!
 
 
+## Wireframe
+***
 
+<details open>
+<summary>Wireframe-Start page </summary>  
+
+![start page wireframe-mobile & desktop](readme-img/Screenshot19.png)
+</details> 
+<details >
+<summary>Wireframe - Start page Desktop & Tablet</summary>  
+
+![grid wireframe-mobile & desktop](readme-img/Screenshot19.png)
+</details> 
+<details>
+<summary>Wireframe - Start page Mobile</summary>  
+
+![homepage wireframe-mobile & desktop](readme-img/Screenshot18.png)
+</details>    
+<details>
+<summary>Wireframe - Grid page Desktop & Tablet</summary>  
+
+![homepage wireframe-mobile & desktop](readme-img/Screenshot21.png)
+</details> 
+<details>
+<summary>Wireframe - Grid page Mobile</summary>  
+
+![homepage wireframe-mobile & desktop](readme-img/Screenshot20.png)
+</details>              
+
+
+## Color
+***
+The color scheme for the project is a combination of  _#431313_ dark reddish-brown color and _#e6690a_ bright orange color through [colors.co](https://coolors.co/431313-e6690a).
+The color scheme for the website is a combination of soft and warm colors. The background is video.
+![colors.co](readme-img/imgcoolors .png)
+
+![home](readme-img/Screenshot12.png)
 
 
 
