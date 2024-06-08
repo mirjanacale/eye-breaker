@@ -4,7 +4,7 @@
 (By Mirjana Cale)
 ***
 
-![amiresponsive](readme-img/Screenshot 2024-06-07 193506.png)
+![amiresponsive](readme-img/Screenshot1.png)
 
 
 
@@ -45,18 +45,18 @@ Eye-bracker is a arcade game where the player controls a paddle to deflect a bou
 ### Player Name Input:
 * The player can type their name in this input area.
 
-![home]()
+![home](readme-img/Screenshot12.png)
 
 ### The "Start" button:
  * launches the game.
  * The player must submit a name  before the game can begin.
 
- ![home](readme-img/img10.png)
+ ![home](readme-img/Screenshot11.png)
 
 ### Player Name Storage:
 * When a page loads, the player's name is obtained from the browser's local storage.
 
-![home](readme-img/img10.png)
+![home](readme-img/Screenshot13.png)
 
 
 ## Game Grid Dimensions:
@@ -64,7 +64,7 @@ Eye-bracker is a arcade game where the player controls a paddle to deflect a bou
 * Positioning: 
 Using CSS flexbox and transform attributes, the grid is centered in the viewport.
 
-![home](readme-img/img10.png)
+![home](readme-img/Screenshot2.png)
 
 ## Blocks
 
@@ -73,7 +73,7 @@ Using CSS flexbox and transform attributes, the grid is centered in the viewport
  * Block Layout:
   At the top of the gaming area, blocks are organized in a grid. Three rows, each with five blocks, are present.
 
-  ![home](readme-img/img10.png)
+  ![home](readme-img/Screenshot8.png)
 
 * Block Removal:
  When the ball strikes a block, it is taken out of the DOM.
@@ -83,14 +83,14 @@ Using CSS flexbox and transform attributes, the grid is centered in the viewport
   A rectangular, purple paddle that the user controls.
  * Keyboard Controls: The arrow keys are used to move the paddle left and right.
 
- ![home](readme-img/img10.png)
+ ![home](readme-img/Screenshot7.png)
 
 ## Touch Controls:
  When using a touch device, swipe movements cause the paddle to move left or right.
  * Boundary Constraints: 
  The game grid places restrictions on the paddle's movement.
 
- ![home](readme-img/img10.png)
+ ![home]()
 
 ## Bouncing Ball (Eyeball)
 
@@ -99,7 +99,7 @@ Using CSS flexbox and transform attributes, the grid is centered in the viewport
 * Movement:
  When the ball collides with walls, blocks, or the paddle, it travels diagonally and changes course.
 
- ![home](readme-img/img10.png)
+ ![home](readme-img/Screenshot6.png)
 
 * Collision Detection:
  When the ball collides with walls, blocks, or the paddle, the game detects it and modifies the ball's path appropriately.
@@ -110,7 +110,7 @@ Using CSS flexbox and transform attributes, the grid is centered in the viewport
 
 * Mute Functionality: The player may turn sound effects on and off by pressing the mute button.
 
-![home](readme-img/img10.png)
+![home](readme-img/Screenshot10.png)
 
 # Scoring Score Display: 
 * The top of the grid shows the current score.
@@ -119,7 +119,7 @@ Every time a block is broken, the score is increased.
 * Winning Condition: 
 When every block is broken, the game pauses and shows a winning message.
 
-![home](readme-img/img10.png)
+![home](readme-img/Screenshot3.png)
 
  
 # End of game and restart
@@ -152,16 +152,16 @@ I started by creating a wireframe for my website and then I began coding in HTML
 ***
 | Page | Test | Pass/Fail |
 | :----| :----| :--------:|
-| All  |  Ensure the start screen appears with a prompt to enter the player's name. | Pass |
-| All  | Verify the "Start Game" button is visible and clickable.  | Pass |
-| All  | Check that the player's name is stored in local storage and displayed correctly. | Pass |
-| All  | If on a mobile device, check that the orientation message appears when in portrait mode. | Pass |
-| All  | Verify that the message disappears when the device is turned horizontally and reappears if turned back to portrait. | Pass |
+| Player name  |  Ensure the start screen appears with a prompt to enter the player's name. | Pass |
+| Start button  | Verify the "Start Game" button is visible and clickable.  | Pass |
+| Local storege  | Check that the player's name is stored in local storage and displayed correctly. | Pass |
+| Message  | If on a mobile device, check that the orientation message appears when in portrait mode. | Pass |
+| Message | Verify that the message disappears when the device is turned horizontally and reappears if turned back to portrait. | Pass |
 | Touch controls  | Use touch controls on mobile devices to move the paddle and verify responsiveness. | Pass |
 | Eyball direction| Check that the eyeball changes direction upon collision with the paddle or walls. | Pass | 
 | Blocks collision| Confirm that blocks are removed upon collision with the eyeball. | Pass |
-| Menu |Ensure the score increments correctly when a block is hit.  | Pass |
-| Menu | After losing or winning, verify that clicking the restart button reloads the game correctly. | Pass |
+| Increments of score |Ensure the score increments correctly when a block is hit.  | Pass |
+| Score | After losing or winning, verify that clicking the restart button reloads the game correctly. | Pass |
 | Game's behavior | Test the game's behavior when switching between portrait and landscape modes during gameplay. | Pass |
 
 
@@ -180,9 +180,9 @@ Eye bracker is designed to be compatible with  Google Chrome, Mozilla Firefox, M
 
 | Broswer tested | Intedend appearance | Screenshot |
 | -------------- | :-----------------: | :--------: |
-| Chrome         |      Yes            | ![crom](readme-img/imgcrom.png)      |
-| Firefox        |      Yes            | ![firefox](readme-img/imgfirefox.png)      |
-| Edge           |      Yes            | ![edge](readme-img/imgedge.png)      |
+| Chrome         |      Yes            | ![crom](readme-img/Screenshot15.png)      |
+| Firefox        |      Yes            | ![firefox](readme-img/Screenshot15.png)      |
+| Edge           |      Yes            | ![edge](readme-img/Screenshot15.png)      |
 
 ##  Responsiveness Testing
 
