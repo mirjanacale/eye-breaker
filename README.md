@@ -26,7 +26,7 @@ Eye-bracker is a arcade game where the player controls a paddle to deflect a bou
 ***
 
 * Enter your name on the start screen.
-* Click the "Start Game" button.
+* Click the "Start Breaking" button.
 * If you're on a mobile device, turn your device horizontally for the best experience.
 * Use the arrow keys or touch controls to move the paddle left and right.
 * Bounce the eyeball to break all the blocks.
@@ -63,13 +63,32 @@ Eye-bracker is a arcade game where the player controls a paddle to deflect a bou
 </details>              
 
 
-## Color
+## Color Scheme
 ***
-The color scheme for the project is a combination of  _#431313_ dark reddish-brown color and _#e6690a_ bright orange color through [colors.co](https://coolors.co/431313-e6690a).
-The color scheme for the website is a combination of soft and warm colors. The background is video.
+* Readability & Contrast: The stark contrast between black and white makes text and other critical features easy to read.
+ * Red, Jounquil, and Mardi Gras are striking hues that contrast with the black background, highlighting important details and actions.
+* Emotional Impact: The rich purple creates a feeling of opulence and celebration, while the thoughtful application of red and yellow adds emotional depth and excitement.
+* Player immersion and engagement are improved by these emotional cues.
+* Aesthetic Balance: A balanced and eye-catching aesthetic is produced by combining bright, strong highlights with a dark, neutral background.   Throughout the game, this equilibrium aids in keeping the player's attention and concentration.
+
+### Color
+- Black :#000000
+- Mardi Gras :#880276
+- White: #FFFFFF
+- Red:#E71918
+- Jounquil:#FACA05
+
+ ![home](readme-img/Screenshot25.png)
+
+
+
+I used the website 
+ [colors.co](https://coolors.co/431313-e6690a) to choose the colors for the game.
+ The background is video.
 ![colors.co](readme-img/imgcoolors .png)
 
-![home](readme-img/Screenshot12.png)
+
+ 
 
 
 
