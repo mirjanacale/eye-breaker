@@ -250,7 +250,66 @@ Eye bracker is designed to be compatible with different device sizes.
 | Desktop  |      Yes            |              Yes        | ![desktop](readme-img/Screenshot2.png)      |
 
 
- 
+
+
+
+
+ ## Validator Testing
+
+ was tested using W3C Markup Validation Service (HTML) and Jigsaw by Google (CSS). 
+
+
+### HTML
+***
+
+The following tools were used for HTML validation:
+- [W3C Markup Validation Service](https://validator.w3.org/)
+
+| W3C Link | Screenshot | Notes |
+| -------- | :--------: | -----:|
+| [index](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmirjanacale.github.io%2FmollyArt%2Findex.html) | ![start pagr](readme-img/imgvalhome.png) | No errors |
+| [game grid](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmirjanacale.github.io%2FmollyArt%2Fgallery.html) | ![screenshot](readme-img/imgvalgallery.png) | No errors |
+| [404 page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmirjanacale.github.io%2FmollyArt%2Fsignup.html) | ![screenshot](readme-img/imgvalsignup.png) | No errors |
+
+### CSS
+***
+
+The following tools were used for CSS validation:
+ - [W3C Markup Validation Service](https://jigsaw.w3.org/css-validator/).
+
+| Jigsaw Link | Screenshot | Notes |
+| ----------- | :--------: | -----:|
+| [styles.css](https://jigsaw.w3.org/css-validator/validator?uri=https://mirjanacale.github.io/mollyArt) | ![screenshot](readme-img/imgvalcss.png) | No errors |
+
+
+## JS
+***
+
+The following tools were used for JS validation:
+ - [W3C Markup Validation Service](https://jigsaw.w3.org/css-validator/).
+
+| Jigsaw Link | Screenshot | Notes |
+| ----------- | :--------: | -----:|
+| [styles.css](https://jigsaw.w3.org/css-validator/validator?uri=https://mirjanacale.github.io/mollyArt) | ![screenshot](readme-img/imgvalcss.png) | No errors |
+
+
+
+
+
+
+
+## Lighthouse Testing
+***
+
+Lighthouse testing was performed by Google's open source tool, 
+[Google Chrome DevTools](https://developers.google.com/web/tools/lighthouse). 
+
+- index.html 
+
+![Lighthouse](readme-img/Screenshot30.png)
+
+
+
 
 
 

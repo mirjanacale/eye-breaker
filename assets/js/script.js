@@ -1,3 +1,4 @@
+/* jshint esversion: 11 */
 const grid = document.querySelector(".grid");
 const scoreDisplay = document.querySelector("#score");
 const restartButton = document.querySelector("#restart-button");
@@ -5,7 +6,7 @@ const blockWidth = 100;
 const blockHeight = 20;
 const boardWidth = 560;
 const boardHeight = 300;
-let timerId
+let timerId;
 let score = 0;
 let xDirection = -2;
 let yDirection = 2;
@@ -116,7 +117,7 @@ const blocks = [
 
 
 
-]
+];
 
 
 
