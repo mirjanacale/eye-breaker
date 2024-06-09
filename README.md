@@ -267,9 +267,9 @@ The following tools were used for HTML validation:
 
 | W3C Link | Screenshot | Notes |
 | -------- | :--------: | -----:|
-| [index](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmirjanacale.github.io%2FmollyArt%2Findex.html) | ![start pagr](readme-img/imgvalhome.png) | No errors |
-| [game grid](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmirjanacale.github.io%2FmollyArt%2Fgallery.html) | ![screenshot](readme-img/imgvalgallery.png) | No errors |
-| [404 page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmirjanacale.github.io%2FmollyArt%2Fsignup.html) | ![screenshot](readme-img/imgvalsignup.png) | No errors |
+| [index](https://validator.w3.org/nu/#textarea) | ![start pagr](readme-img/Screenshot47.png) | No errors |
+| 
+
 
 ### CSS
 ***
@@ -279,18 +279,18 @@ The following tools were used for CSS validation:
 
 | Jigsaw Link | Screenshot | Notes |
 | ----------- | :--------: | -----:|
-| [styles.css](https://jigsaw.w3.org/css-validator/validator?uri=https://mirjanacale.github.io/mollyArt) | ![screenshot](readme-img/imgvalcss.png) | No errors |
+| [styles.css](https://jigsaw.w3.org/css-validator/validator) | ![screenshot](readme-img/Screenshot46.png) | No errors |
 
 
 ## JS
 ***
 
 The following tools were used for JS validation:
- - [W3C Markup Validation Service](https://jigsaw.w3.org/css-validator/).
+ - [W3C Markup Validation Service](https://jshint.com/).
 
 | Jigsaw Link | Screenshot | Notes |
 | ----------- | :--------: | -----:|
-| [styles.css](https://jigsaw.w3.org/css-validator/validator?uri=https://mirjanacale.github.io/mollyArt) | ![screenshot](readme-img/imgvalcss.png) | No errors |
+| [ js](https://jigsaw.w3.org/css-validator/validator?uri=https://mirjanacale.github.io/mollyArt) | ![screenshot](readme-img/Screenshot45.png) | No errors |
 
 
 
