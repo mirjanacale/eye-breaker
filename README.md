@@ -184,7 +184,7 @@ When every block is broken, the game pauses and shows a winning message.
 * Restart Button:
  This button allows the player to restart the game by reloading it.
 
- ![home](readme-img/img10.png)
+ ![home](readme-img/Screenshot28.png)
 
 
 
@@ -245,9 +245,9 @@ Eye bracker is designed to be compatible with different device sizes.
 
 | Size     | Intedend appearance | Intended responsiveness | Screenshot |
 | -------- | :-----------------: | -----------------------:| :--------: |
-| Mobile   |      Yes            |              Yes        | ![mobil](readme-img/imgmobil.png)      |
-| Tablet   |      Yes            |              Yes        | ![tablet](readme-img/imgtablet.png)      |
-| Desktop  |      Yes            |              Yes        | ![desktop](readme-img/imgdesktop.png)      |
+| Mobile   |      Yes            |              Yes        | ![mobil](readme-img/Screenshot26.png)      |
+| Tablet   |      Yes            |              Yes        | ![tablet](readme-img/Screenshot2.png)      |
+| Desktop  |      Yes            |              Yes        | ![desktop](readme-img/Screenshot2.png)      |
 
 
  
