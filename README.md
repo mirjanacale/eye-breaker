@@ -284,13 +284,13 @@ The following tools were used for CSS validation:
 
 ## JS
 ***
+The following tools were used for JSHint validation:
+- [JSHint Validation Service](https://jshint.com/)
 
-The following tools were used for JS validation:
- - [W3C Markup Validation Service](https://jshint.com/).
-
-| Jigsaw Link | Screenshot | Notes |
-| ----------- | :--------: | -----:|
-| [ js](https://jigsaw.w3.org/css-validator/validator?uri=https://mirjanacale.github.io/mollyArt) | ![screenshot](readme-img/Screenshot45.png) | No errors |
+| W3C Link | Screenshot | Notes |
+| -------- | :--------: | -----:|
+| [js](https://jshint.com/) | ![start pagr](readme-img/Screenshot45.png) | No errors |
+| 
 
 
 
