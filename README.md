@@ -1,10 +1,10 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
 
 # EYE-BRACKER
 (By Mirjana Cale)
 ***
 
-![amiresponsive](readme-img/Screenshot1.png)
+![amiresponsive](readme-img/amiresponsive.png)
 
 
 
@@ -13,7 +13,7 @@
 
 
 ***
-### Live pages -
+### Live pages - https://mirjanacale.github.io/eye-breaker/
 ***
 
 
@@ -112,6 +112,12 @@ I used the website
 * When a page loads, the player's name is obtained from the browser's local storage.
 
 ![home](readme-img/Screenshot13.png)
+
+### Oriental message
+***
+The orientation message is used in the mobile application to guide users on how to properly interact with the game. Specifically, it instructs users to hold their mobile devices horizontally to ensure the best gameplay experience.
+
+![home](readme-img/message.png)
 
 
 ## Game Grid Dimensions:
