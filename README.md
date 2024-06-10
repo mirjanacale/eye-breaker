@@ -252,8 +252,8 @@ Eye bracker is designed to be compatible with different device sizes.
 | Size     | Intedend appearance | Intended responsiveness | Screenshot |
 | -------- | :-----------------: | -----------------------:| :--------: |
 | Mobile   |      Yes            |              Yes        | ![mobil](readme-img/Screenshot26.png)      |
-| Tablet   |      Yes            |              Yes        | ![tablet](readme-img/Screenshot2.png)      |
-| Desktop  |      Yes            |              Yes        | ![desktop](readme-img/Screenshot2.png)      |
+| Tablet   |      Yes            |              Yes        | ![tablet](readme-img/tablet.png)      |
+| Desktop  |      Yes            |              Yes        | ![desktop](readme-img/desktop.png)      |
 
 
 
@@ -273,7 +273,7 @@ The following tools were used for HTML validation:
 
 | W3C Link | Screenshot | Notes |
 | -------- | :--------: | -----:|
-| [index](https://validator.w3.org/nu/#textarea) | ![start pagr](readme-img/Screenshot47.png) | No errors |
+| [index](https://validator.w3.org/nu/#textarea) | ![start pagr](readme-img/validatorhtml.png) | No errors |
 | 
 
 
@@ -285,7 +285,7 @@ The following tools were used for CSS validation:
 
 | Jigsaw Link | Screenshot | Notes |
 | ----------- | :--------: | -----:|
-| [styles.css](https://jigsaw.w3.org/css-validator/validator) | ![screenshot](readme-img/Screenshot46.png) | No errors |
+| [styles.css](https://jigsaw.w3.org/css-validator/validator) | ![screenshot](readme-img/validatorcss.png) | No errors |
 
 
 ## JS
@@ -295,7 +295,7 @@ The following tools were used for JSHint validation:
 
 | W3C Link | Screenshot | Notes |
 | -------- | :--------: | -----:|
-| [js](https://jshint.com/) | ![start pagr](readme-img/Screenshot45.png) | No errors |
+| [jshint](https://jshint.com/) | ![start pagr](readme-img/jshint.png) | No errors |
 | 
 
 
@@ -312,7 +312,7 @@ Lighthouse testing was performed by Google's open source tool,
 
 - index.html 
 
-![Lighthouse](readme-img/Screenshot30.png)
+![Lighthouse](readme-img/lighthouse.png)
 
 
 
