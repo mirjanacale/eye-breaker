@@ -39,17 +39,17 @@ Eye-bracker is a arcade game where the player controls a paddle to deflect a bou
 <details open>
 <summary>Wireframe-Start page </summary>  
 
-![start page wireframe-mobile & desktop](readme-img/Screenshot19.png)
+![start page wireframe-mobile & desktop](readme-img/wireframe19.png)
 </details> 
 <details >
 <summary>Wireframe - Start page Desktop & Tablet</summary>  
 
-![grid wireframe-mobile & desktop](readme-img/Screenshot19.png)
+![grid wireframe-mobile & desktop](readme-img/wireframe19.png)
 </details> 
 <details>
 <summary>Wireframe - Start page Mobile</summary>  
 
-![homepage wireframe-mobile & desktop](readme-img/Screenshot18.png)
+![homepage wireframe-mobile & desktop](readme-img/wireframe18.png)
 </details>    
 <details>
 <summary>Wireframe - Grid page Desktop & Tablet</summary>  
