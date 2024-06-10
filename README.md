@@ -315,6 +315,22 @@ Lighthouse testing was performed by Google's open source tool,
 ![Lighthouse](readme-img/lighthouse.png)
 
 
+## Unfixed Bugs
+***
+There are currently no known unfixed bugs in the codebase. Apart from the Video background due to its size which is reduced with [HandBrake](https://handbrake.fr/) , If you find any other while testing, please report them!
+
+### Solved Bugs
+***
+ - For the best viewing experience, I asked the player to turn their smartphone horizontally while they were playing using JavaScript's orientationchange event. Correctly displaying game features and offering a better user interface that improves gameplay depend on this orientation.
+
+### Fix
+***h
+
+ - To display the orientation message only on mobile devices, you can use CSS media queries along with JavaScript. First, check if the device screen width is less than 650 pixels. If it is, set the display property of the orientationMessage element to "flex". This way, the dialog will appear only for mobile devices. 📱👍
+
+![bugs](readme-img/message650.png)
+
+
 
 
 
@@ -375,3 +391,28 @@ You can fork this repository by using the following steps:
 
 There are no major differences between the local (Gitpod) version and the deployed (GitHub Pages) version that I'm aware of.
 
+## Credits
+***
+
+  [Future in Tech](https://ictskillnet.ie/courses/),
+
+ Site, and they enhance the website's visual appeal and functionality.
+
+
+ Amy Richardson 
+
+
+
+### Media
+
+***
+ [TinyPNG](https://tinypng.com/), is used to reduce images.
+
+
+[CSSUiverse ](https://uiverse.io/SelfMadeSystem/pretty-treefrog-77) is used for some styles,
+Backgraun video is reduce with [HandBrake](https://handbrake.fr/) and Microsoft ClipBar are used to optimize the backdrop video, which is downloaded from [YouTube](https://www.youtube.com/), so that it loads quickly and plays smoothly. Techniques for picture reduction are also used to maximize performance throughout the website.
+
+***
+### Acknowledgements
+
+ I would like to acknowledge my Code Institute mentors, Alan Bushel, Tim Nelson, Amy Richardson for thers guidance and encouragement on this project.
