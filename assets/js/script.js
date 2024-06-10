@@ -21,10 +21,10 @@ const eyeballStart = [270, 40];
 let eyeballCurrentPosition = eyeballStart;
 
 
-//POCETNA STRANICA
+//START PAGE
 
 // Get the start page container and button elements
-const startPage = document.querySelector(".start-page");
+const startPage = document.getElementById(".start-page");
 const startButton = document.querySelector("#start-button");
 const gameContainer = document.getElementById("game-container");
 const orientationMessage = document.getElementById("orientation-message");
@@ -118,13 +118,13 @@ const blocks = [
   new Block(230, 270),
   new Block(340, 270),
   new Block(450, 270),
-// middle row
+  // middle row
   new Block(10, 240),
   new Block(120, 240),
   new Block(230, 240),
   new Block(340, 240),
   new Block(450, 240),
-//bottom row
+  //bottom row
   new Block(10, 210),
   new Block(120, 210),
   new Block(230, 210),
@@ -223,7 +223,6 @@ function moveUser(e) {
     case "ArrowLeft":
       if (currentPosition[0] > 0) {
         currentPosition[0] -= 10;
-
         drawUser();
       }
       break;
@@ -277,9 +276,9 @@ function checkForCollisions() {
       changeDirection();  
       playBounceSound(); 
       score++;
-      scoreDisplay.innerHTML = score;
+      scoreDisplay.innerHTML = `Score<br>${score}`;
       if (blocks.length == 0) {
-        scoreDisplay.innerHTML = 'You Win!';
+        scoreDisplay.innerHTML = `You Win,<br>${playerName}!`;
         clearInterval(timerId);
         document.removeEventListener('keydown', moveUser);
         showRestartButton();
@@ -310,7 +309,7 @@ function checkForCollisions() {
 
 if (eyeballCurrentPosition[1] <= 0) {
   clearInterval(timerId); 
-  scoreDisplay.innerHTML = `You lose ,${playerName} ! `;
+  scoreDisplay.innerHTML = `You lose ,${playerName}! <br>Your score was: ${score} `;
   playLoseSound();  
   document.removeEventListener('keydown', moveUser);
   showRestartButton();
@@ -318,7 +317,6 @@ if (eyeballCurrentPosition[1] <= 0) {
 
 
 }
-//SOUND OF EYEBALL AND MUTE
 const bounceSound = document.getElementById("bounce-sound");
 
 
