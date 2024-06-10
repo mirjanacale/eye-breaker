@@ -100,7 +100,7 @@ I used the website
 ### Player Name Input:
 * The player can type their name in this input area.
 
-![home](readme-img/Screenshot12.png)
+![home](readme-img/nameinput12.png)
 
 ### The "Start" button:
  * launches the game.
