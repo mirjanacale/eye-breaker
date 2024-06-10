@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     border: none;
-    text-decoration: none; /*removes underline from links*/
+    text-decoration: none;
+     /*removes underline from links*/
     list-style: none;
   }
   
@@ -10,12 +11,13 @@
   
   
   body {
-      display: flex;
-      justify-content: center; /* Horizontally center the grid */
-      align-items: center; 
-      height: 100vh; 
-      margin: 5px;
-      overflow: auto; /* Remove default margin */
+    padding: 2em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: hidden;
   }
   .backimg{
     position: fixed;
@@ -31,39 +33,31 @@
     
   }
 
-/*STYLING FOR  START PAGE */
+/*START PAGE */
 
 .start-page {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  text-align: center;
-  padding-top: 20%;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
 }
-#player-name {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #ffbc03;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 20px;
 
+#player-name {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #ffbc03;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
 }
 
 
 /* START BUTTON*/ 
 #start-button {
-  position:absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   --glow-color: rgb(217, 176, 255);
   --glow-spread-color: rgba(191, 123, 255, 0.781);
   --enhanced-glow-color: rgb(231, 206, 255);
@@ -113,10 +107,6 @@
  }
 
  .title{
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 40px;
   color: rgb(250, 239, 28);
   text-align: center;
@@ -125,11 +115,6 @@
   
 }
 .eye-lid {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
   background-color: rgb(11, 12, 12);
   border-radius: 50%;
   display: flex;
@@ -202,43 +187,20 @@
   height: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#game-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
 
   .grid {
-    position:absolute;
     width: 560px;
     height: 300px;
     background-color: rgb(237, 25, 25);
     border : solid black 1px;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    position: relative;
 
 
 }
@@ -253,15 +215,14 @@
    
 }
 .user {
-    position: absolute;
     width:100px;
     height: 20px;
     background-color:purple;
+    position: absolute;
    
 }
 
 .eyeball {
-  position: absolute;
   width: 30px;
   height: 30px;
   border-radius: 50% / 50%;
@@ -269,6 +230,7 @@
   border: 3px solid black;
   box-shadow: inset 0 0 10px rgb(241, 24, 24);
   overflow: hidden;
+  position: absolute;
 }
 
 .eyeball::before {
@@ -284,23 +246,18 @@
 }
 
 #score{
-  position:absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 24px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   background-color: #4CAF50;
   color: #ffffff;
-
+	width: fit-content;
+	text-align: center;
 
 }
 #restart-button {
-  position: absolute;
-  top: 85%;
-  left:50px;
+  position: relative;
   width: 150px;
   height: 55px;
   border-radius: 45px;
@@ -384,152 +341,52 @@
   cursor: pointer;
   font-size: 16px;
 }
-
-
-
-
-
-@media screen and (min-width: 1200px){
-  .grid {
-    width: 560px; 
-    height: 300px; 
-  }
-  .block{
-    width: 90px;
-    height: 20px;
-  }
-  #restart-button{
-    position: absolute;
-    left: 45%;
-    
-
-  }
-
+/* orientation message on mobile devices <= 650px / handled by JavaScript */
+.message {
+	background-color: rgba(250, 250, 250, 0.137);
+	text-shadow: 2px 2px 2px black;
+	font-size: 2.5em;
+	text-align: center;
+	display: flex;
+	color: #ffbc03;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5em;
+	border-radius: 0.5em;
 }
 
-
-
-  /* For medium screens (950px to 1200px wide) */
-@media screen and (min-width: 950px) and (max-width: 1200px) {
-  .grid {
-
-    width: 300%; 
-    max-width: 600px; 
-
-  }
-  .block{
-    
-    width: 90px;
-    height: 20px;
-  }
-  #restart-button{
-    position: absolute;
-    top: 95%;
-    left: 50%;
-  }
-}
- 
-
-
-  
-/* For small screens (up to 950px wide) */
-@media screen and (max-width: 950px) { 
-
-  .grid {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  padding:10px;
-  transform: translate(-50%, -50%);
-  width: 560px; 
-  height: 300px;
-  background-color: rgb(237, 25, 25);
-  border: solid black 1px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 1;
-
-}
-
-.message{
-  display: flex; /*  message on mobile devices */
-  color: #ffbc03;
-  position: absolute; 
-}
-
-
-
-
-.eye-lid{
-position: absolute;
-top:65%;
-left: 50%;
-}
-#start-button{
-position: absolute;
-top: 40%;
-left: 50%;
-
-}
-#player-name{
-position: absolute;
-top: 25%;
-left: 50%;
-}
-.block{
-width:85px;
-height: 15px;
-}
-.user{
-position: absolute;
-width: 90px;
-height: 20px;
-}
-.eyeball{
-width: 25px;
-height: 25px;
-}
-#score{
-position: absolute;
-top:30%;
-left: 70%;
-
-}
-#restart-button{
-position: absolute;
-top: 120%;
-left: 50%;
-}
-#mute-button{
-position: absolute;
-top: 10px;
-right: 10px;
-padding: 10px;
-background-color: #f00;
-color: #fff;
-border: none;
-cursor: pointer;
-font-size: 16px;
-}
-}
-
+/* 404 error pag */
 .error-page {
-  text-align: center;
-  font-size: 25px;
-  color: #f00;
-  margin-top: 40px;
-  background-color: #ffbc03;
- 
- }
- a {
- text-decoration:underline;
- font-size: 40px;
- color:rgb(124, 54, 255);
- text-align: center;
- background-color: #ffbc03;
- }
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	text-align: center;
+	font-size: 25px;
+	color: #f00;
+	margin-top: 40px;
+	background-color: #ffbc03;
+  padding: 1em;
+}
+
+a {
+	text-decoration: underline;
+	font-size: 40px;
+	color: rgb(124, 54, 255);
+	text-align: center;
+}
+
+
+.hide {
+	display: none !important;
+}
+.invisible {
+	opacity: 0;
+	visibility: hidden;
+}
+
+    
 
 
 
@@ -538,5 +395,12 @@ font-size: 16px;
 
 
 
-  
+
+
+
+
+
+
+
+
 
