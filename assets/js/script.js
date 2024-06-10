@@ -31,12 +31,14 @@ const orientationMessage = document.getElementById("orientation-message");
 
 
 let playerName ="";
+let gameStarted = false;
 
 
 startButton.addEventListener("click", startGame);
 
 // Function to start the game
 function startGame() {
+  gameStarted = true;
   const nameInput = document.querySelector("#player-name");
   playerName = nameInput.value;
 
@@ -53,18 +55,10 @@ function startGame() {
 // Store the player's name in local storage
 localStorage.setItem("playerName", playerName);
 
+// Remove the start page container
+startPage.classList.add("hide");
+gameContainer.classList.remove("hide");
 
-// Check if the device is a mobile 
-if (window.innerWidth < 768) {
-  orientationMessage.style.display = "flex";
-}
-
-
-
-  // Remove the start page container
-  startPage.style.display = "none";
-  gameContainer.style.display = "block";
-  
 // Start the game by calling the moveEyeball function and setting the timerId interval
 timerId = setInterval(moveEyeball, 10);
 
@@ -78,7 +72,28 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+  
+// Check if the device is a mobile 
+function checkViewportWidth() {
+  if (window.innerWidth <= 650) {
+      orientationMessage.classList.remove("hide");
+      gameContainer.classList.add("hide");
+      startPage.classList.add("hide");
+  } else {
+      orientationMessage.classList.add("hide");
+      if (gameStarted) {
+          gameContainer.classList.remove("hide");
+      } else {
+          startPage.classList.remove("hide");
+      }
+  }
+}
 
+// Check the width when the page loads
+window.addEventListener('load', checkViewportWidth);
+
+// Check the width when the window is resized
+window.addEventListener('resize', checkViewportWidth);
 
 
 
