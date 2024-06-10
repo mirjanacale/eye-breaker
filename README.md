@@ -54,12 +54,12 @@ Eye-bracker is a arcade game where the player controls a paddle to deflect a bou
 <details>
 <summary>Wireframe - Grid page Desktop & Tablet</summary>  
 
-![homepage wireframe-mobile & desktop](readme-img/Screenshot21.png)
+![homepage wireframe-mobile & desktop](readme-img/wireframe21.png)
 </details> 
 <details>
 <summary>Wireframe - Grid page Mobile</summary>  
 
-![homepage wireframe-mobile & desktop](readme-img/Screenshot20.png)
+![homepage wireframe-mobile & desktop](readme-img/wireframe20.png)
 </details>              
 
 
@@ -78,14 +78,14 @@ Eye-bracker is a arcade game where the player controls a paddle to deflect a bou
 - Red:#E71918
 - Jounquil:#FACA05
 
- ![home](readme-img/Screenshot25.png)
+ ![home](readme-img/colors25.png)
 
 
 
 I used the website 
  [colors.co](https://coolors.co/431313-e6690a) to choose the colors for the game.
  The background is video.
-![colors.co](readme-img/imgcoolors .png)
+
 
 
  
