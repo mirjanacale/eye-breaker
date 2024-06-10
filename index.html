@@ -10,27 +10,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 
-    <title>Document</title>
+    <title>Eye breaker</title>
 </head>
 <body>
+    <!--background video-->
+    <video autoplay loop muted class="backimg">
+        <source src="assets/images/Vecteezy_Spooky-Eyes-Animation_1786164.mp4">
+    </video>
     
     <div class="start-page">
       <h1 class="title">EYE BREAKER</h1>
-      <br>
-      <br>
       
       <input type="text" id="player-name" placeholder="breaker's name please">
-      <br>
       
       <button id="start-button">START BREAKING</button>
-  <br>
-  
-  
-      <video autoplay loop muted class="backimg">
-          <source src="assets/images/Vecteezy_Spooky-Eyes-Animation_1786164.mp4">
-      </video>
-    
-      <br>
 
       <div class="eye-lid">
           <div class="eye">
@@ -41,24 +34,19 @@
       </div>
      
   </div>
+<!--orientation message-->
+<div id="orientation-message"  class= "message" >   
+    <p>Please hold your mobile phone horizontally to play the game.</p>
+</div>
 
   <div id="game-container" style="display: none;">
       <div id="score">0</div>
       <div class="grid"></div>
-
-      <!--orientation message-->
-      <div id="orientation-message"  class= "message" >   
-        <p>Please hold your mobile phone horizontally to play the game.</p>
-    </div>
-    
-      <video autoplay loop muted class="backimg">
-          <source src="assets/images/Vecteezy_Spooky-Eyes-Animation_1786164.mp4">
-      </video>
-
+     
     <audio id="bounce-sound" src="assets/images/584111__ironcross32__bouncy_popper.wav"></audio>
-    <button id="mute-button">Mute</button>
+    <button id="mute-button">Unmute</button>
 
-      <button id="restart-button" style="display: none;">Restart</button>
+      <button id="restart-button" class="invisible">Restart</button>
       <audio id="lose-sound" src="assets/images/178875__rocotilos__you-lose-evil.wav"></audio>
   </div>
   
