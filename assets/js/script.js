@@ -112,33 +112,26 @@ class Block {
 
 //   blocks
 const blocks = [
+  //top row
   new Block(10, 270),
   new Block(120, 270),
   new Block(230, 270),
   new Block(340, 270),
   new Block(450, 270),
-
+// middle row
   new Block(10, 240),
   new Block(120, 240),
   new Block(230, 240),
   new Block(340, 240),
   new Block(450, 240),
-
+//bottom row
   new Block(10, 210),
   new Block(120, 210),
   new Block(230, 210),
   new Block(340, 210),
   new Block(450, 210),
 
-
-
 ];
-
-
-
-
-
-
 
 
 
@@ -223,15 +216,12 @@ function moveUserByTouch(offset) {
 }
 
 
-
-
 //USER MOVE
 
 function moveUser(e) {
   switch (e.key) {
     case "ArrowLeft":
       if (currentPosition[0] > 0) {
-        //fixiranje da user ostane u gridu
         currentPosition[0] -= 10;
 
         drawUser();
@@ -253,7 +243,7 @@ function moveUser(e) {
 
 const eyeball = document.createElement("div");
 eyeball.classList.add("eyeball");
-grid.appendChild(eyeball); //stavljanje lopte u parrent
+grid.appendChild(eyeball); 
 draweyeball();
 
 
@@ -285,7 +275,7 @@ function checkForCollisions() {
       allBlocks[i].classList.remove('block');
       blocks.splice(i,1);
       changeDirection();  
-      playBounceSound(); // Play sound on block collision
+      playBounceSound(); 
       score++;
       scoreDisplay.innerHTML = score;
       if (blocks.length == 0) {
@@ -301,7 +291,7 @@ function checkForCollisions() {
   if (eyeballCurrentPosition[0] >= (boardWidth - eyeballDiameter) || eyeballCurrentPosition[0] <= 0 || eyeballCurrentPosition[1] >= (boardHeight - eyeballDiameter))
   {
     changeDirection();
-    playBounceSound(); // Play sound on wall collision
+    playBounceSound(); 
 
   }
 
@@ -313,15 +303,15 @@ function checkForCollisions() {
   )
   {
     changeDirection();
-    playBounceSound(); // Play sound on user collision
+    playBounceSound(); 
   }
 
 //GAME OVER
 
 if (eyeballCurrentPosition[1] <= 0) {
-  clearInterval(timerId); // Stop the interval
+  clearInterval(timerId); 
   scoreDisplay.innerHTML = `You lose ,${playerName} ! `;
-  playLoseSound();  //Play lose sound!!
+  playLoseSound();  
   document.removeEventListener('keydown', moveUser);
   showRestartButton();
 }
@@ -333,11 +323,11 @@ const bounceSound = document.getElementById("bounce-sound");
 
 
 const muteButton = document.getElementById("mute-button");
-let isMuted = false;
+let isMuted = true;
 
 function playBounceSound() {
   if (!isMuted) {
-  bounceSound.currentTime = 0; // Reset the sound to start
+  bounceSound.currentTime = 0; 
   bounceSound.play();
 }
 
@@ -359,14 +349,10 @@ const loseSound = document.getElementById("lose-sound");
 
 function playLoseSound() {
   if (!isMuted) {
-    loseSound.currentTime = 0; // Reset the sound to start
+    loseSound.currentTime = 0; 
     loseSound.play();
   }
 }
-
-
-
-
 
 
 function changeDirection() {
@@ -386,15 +372,16 @@ function changeDirection() {
     xDirection = 2;
     return;
   }
-  playBounceSound(); // Play sound on direction change
+  playBounceSound();
 }
 
 
 restartButton.addEventListener("click", restartGame);
 
 function  showRestartButton() {
-  restartButton.style.display = "block";
+  restartButton.classList.remove("invisible");
 }
+
 
 function restartGame() {
   document.location.reload();
