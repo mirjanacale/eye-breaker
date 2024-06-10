@@ -24,7 +24,7 @@ let eyeballCurrentPosition = eyeballStart;
 //START PAGE
 
 // Get the start page container and button elements
-const startPage = document.getElementById(".start-page");
+const startPage = document.getElementById("start-page");
 const startButton = document.querySelector("#start-button");
 const gameContainer = document.getElementById("game-container");
 const orientationMessage = document.getElementById("orientation-message");
