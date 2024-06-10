@@ -190,7 +190,7 @@ When every block is broken, the game pauses and shows a winning message.
 * Restart Button:
  This button allows the player to restart the game by reloading it.
 
- ![home](readme-img/Screenshot28.png)
+ ![home](readme-img/restartbutton.png)
 
 
 
@@ -241,9 +241,9 @@ Eye bracker is designed to be compatible with  Google Chrome, Mozilla Firefox, M
 
 | Broswer tested | Intedend appearance | Screenshot |
 | -------------- | :-----------------: | :--------: |
-| Chrome         |      Yes            | ![crom](readme-img/Screenshot15.png)      |
-| Firefox        |      Yes            | ![firefox](readme-img/Screenshot15.png)      |
-| Edge           |      Yes            | ![edge](readme-img/Screenshot15.png)      |
+| Chrome         |      Yes            | ![crom](readme-img/chrome15.png)      |
+| Firefox        |      Yes            | ![firefox](readme-img/firefox.png)      |
+| Edge           |      Yes            | ![edge](readme-img/edge.png)      |
 
 ##  Responsiveness Testing
 
