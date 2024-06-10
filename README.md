@@ -106,12 +106,12 @@ I used the website
  * launches the game.
  * The player must submit a name  before the game can begin.
 
- ![home](readme-img/Screenshot11.png)
+ ![home](readme-img/startbutton.png)
 
 ### Player Name Storage:
 * When a page loads, the player's name is obtained from the browser's local storage.
 
-![home](readme-img/Screenshot13.png)
+![home](readme-img/localestorage13.png)
 
 ### Oriental message
 ***
@@ -125,7 +125,7 @@ The orientation message is used in the mobile application to guide users on how 
 * Positioning: 
 Using CSS flexbox and transform attributes, the grid is centered in the viewport.
 
-![home](readme-img/Screenshot2.png)
+![home](readme-img/grid2.png)
 
 ## Blocks
 
@@ -134,7 +134,7 @@ Using CSS flexbox and transform attributes, the grid is centered in the viewport
  * Block Layout:
   At the top of the gaming area, blocks are organized in a grid. Three rows, each with five blocks, are present.
 
-  ![home](readme-img/Screenshot8.png)
+  ![home](readme-img/blocks8.png)
 
 * Block Removal:
  When the ball strikes a block, it is taken out of the DOM.
@@ -144,14 +144,14 @@ Using CSS flexbox and transform attributes, the grid is centered in the viewport
   A rectangular, purple paddle that the user controls.
  * Keyboard Controls: The arrow keys are used to move the paddle left and right.
 
- ![home](readme-img/Screenshot7.png)
+ ![home](readme-img/userpaddle7.png)
 
 ## Touch Controls:
  When using a touch device, swipe movements cause the paddle to move left or right.
  * Boundary Constraints: 
  The game grid places restrictions on the paddle's movement.
 
- ![home]()
+ ![home](readme-img/message.png)
 
 ## Bouncing Ball (Eyeball)
 
@@ -160,7 +160,7 @@ Using CSS flexbox and transform attributes, the grid is centered in the viewport
 * Movement:
  When the ball collides with walls, blocks, or the paddle, it travels diagonally and changes course.
 
- ![home](readme-img/Screenshot6.png)
+ ![home](readme-img/eyeball6.png)
 
 * Collision Detection:
  When the ball collides with walls, blocks, or the paddle, the game detects it and modifies the ball's path appropriately.
@@ -171,7 +171,7 @@ Using CSS flexbox and transform attributes, the grid is centered in the viewport
 
 * Mute Functionality: The player may turn sound effects on and off by pressing the mute button.
 
-![home](readme-img/Screenshot10.png)
+![home](readme-img/mutebutton10.png)
 
 # Scoring Score Display: 
 * The top of the grid shows the current score.
@@ -180,7 +180,7 @@ Every time a block is broken, the score is increased.
 * Winning Condition: 
 When every block is broken, the game pauses and shows a winning message.
 
-![home](readme-img/Screenshot3.png)
+![home](readme-img/youwin3.png)
 
  
 # End of game and restart
