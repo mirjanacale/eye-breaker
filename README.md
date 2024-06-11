@@ -386,7 +386,6 @@ There are no major differences between the local (Gitpod) version and the deploy
   - [Slack](https://slack.com/workspace-signin), is used for help,
 
 ### Media
-
 ***
 [TinyPNG](https://tinypng.com/), is used to reduce images.
 [CSSUiverse ](https://uiverse.io/SelfMadeSystem/pretty-treefrog-77) is used for some styles,

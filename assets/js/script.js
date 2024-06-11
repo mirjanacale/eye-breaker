@@ -21,9 +21,7 @@ const eyeballStart = [270, 40];
 let eyeballCurrentPosition = eyeballStart;
 
 
-//START PAGE
-
-// Get the start page container and button elements
+// START PAGE
 const startPage = document.getElementById("start-page");
 const startButton = document.querySelector("#start-button");
 const gameContainer = document.getElementById("game-container");
@@ -43,23 +41,18 @@ function startGame() {
   playerName = nameInput.value;
 
 
-
-
-
-  if (playerName.trim() === "") {
+ if (playerName.trim() === "") {
     alert("Please enter your name to start the game.");
     return;
   }
 
-
-// Store the player's name in local storage
 localStorage.setItem("playerName", playerName);
 
-// Remove the start page container
+
 startPage.classList.add("hide");
 gameContainer.classList.remove("hide");
 
-// Start the game by calling the moveEyeball function and setting the timerId interval
+// Start the game
 timerId = setInterval(moveEyeball, 10);
 
 }
@@ -95,10 +88,6 @@ window.addEventListener('load', checkViewportWidth);
 // Check the width when the window is resized
 window.addEventListener('resize', checkViewportWidth);
 
-
-
-
-//create block
 class Block {
     constructor(xAxis, yAxis) {
       this.bottomLeft = [xAxis, yAxis];
@@ -108,9 +97,7 @@ class Block {
     }
   }
 
-
-
-//   blocks
+// BLOCKS
 const blocks = [
   //top row
   new Block(10, 270),
@@ -133,11 +120,8 @@ const blocks = [
 
 ];
 
-
-
 // ADDBLOCKS
 
-//  loop with Array.prototype.forEach
  function addBlocks() {
     blocks.forEach(blockData => {
      const block = document.createElement("div");
@@ -215,9 +199,7 @@ function moveUserByTouch(offset) {
   drawUser();
 }
 
-
 //USER MOVE
-
 function moveUser(e) {
   switch (e.key) {
     case "ArrowLeft":
@@ -235,11 +217,7 @@ function moveUser(e) {
   }
 }
 
-
-
-
 // EYEBALL
-
 const eyeball = document.createElement("div");
 eyeball.classList.add("eyeball");
 grid.appendChild(eyeball); 
@@ -250,7 +228,6 @@ draweyeball();
 document.addEventListener("keydown", moveUser);
 
 // MOVEEYEBALL
-
 function moveEyeball() {
   eyeballCurrentPosition[0] += xDirection;
   eyeballCurrentPosition[1] += yDirection;
@@ -258,7 +235,6 @@ function moveEyeball() {
 
   checkForCollisions();
 }
-
 
 function checkForCollisions() {
   //check for block collision
@@ -285,8 +261,8 @@ function checkForCollisions() {
       }
     }
   }
+
   // COLLISION WALL
-  
   if (eyeballCurrentPosition[0] >= (boardWidth - eyeballDiameter) || eyeballCurrentPosition[0] <= 0 || eyeballCurrentPosition[1] >= (boardHeight - eyeballDiameter))
   {
     changeDirection();
@@ -315,7 +291,6 @@ if (eyeballCurrentPosition[1] <= 0) {
   showRestartButton();
 }
 
-
 }
 const bounceSound = document.getElementById("bounce-sound");
 
@@ -334,7 +309,7 @@ function playBounceSound() {
 muteButton.addEventListener("click", toggleMute);
 
 
-muteButton.addEventListener("click", toggleMute);
+//muteButton.addEventListener("click", toggleMute);
 
 function toggleMute() {
   isMuted = !isMuted;
@@ -342,7 +317,6 @@ function toggleMute() {
 }
 
 //LOSE SOUND
-
 const loseSound = document.getElementById("lose-sound");
 
 function playLoseSound() {
@@ -351,7 +325,6 @@ function playLoseSound() {
     loseSound.play();
   }
 }
-
 
 function changeDirection() {
   if (xDirection === 2 && yDirection === 2) {
@@ -373,13 +346,11 @@ function changeDirection() {
   playBounceSound();
 }
 
-
 restartButton.addEventListener("click", restartGame);
 
 function  showRestartButton() {
   restartButton.classList.remove("invisible");
 }
-
 
 function restartGame() {
   document.location.reload();
