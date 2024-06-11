@@ -1,6 +1,6 @@
 
 
-# EYE-BRACKER
+# EYE-BREAKER
 (By Mirjana Cale)
 ***
 
@@ -19,7 +19,7 @@
 
  
 ## Introduction
-Eye-bracker is a arcade game where the player controls a paddle to deflect a bouncing eyeball. The goal is to smash a wall of colored bricks by hitting them with the eyeball.The paddle moves horizontally.It's a classic that continues to captivate players of all ages.
+Eye-breaker is a arcade game where the player controls a paddle to deflect a bouncing eyeball. The goal is to smash a wall of colored bricks by hitting them with the eyeball.The paddle moves horizontally.It's a classic that continues to captivate players of all ages.
 
   ## How to Play
 
@@ -186,12 +186,15 @@ When every block is broken, the game pauses and shows a winning message.
 # End of game and restart
 
 * Condition of Game Over:
- When the ball touches the paddle below, the game stops and shows a losing message.
+ When the ball touches the paddle below, the game stops and shows a losing message and score.
 * Restart Button:
  This button allows the player to restart the game by reloading it.
-
+- restart button,
+***
  ![home](readme-img/restartbutton.png)
-
+- Score,
+***
+ ![home](readme-img/score.png)
 
 
 
@@ -312,7 +315,7 @@ There are currently no known unfixed bugs in the codebase. Apart from the Video 
  - For the best viewing experience, I asked the player to turn their smartphone horizontally while they were playing using JavaScript's orientationchange event. Correctly displaying game features and offering a better user interface that improves gameplay depend on this orientation.
 
 ### Fix
-***h
+***
 
  - To display the orientation message only on mobile devices, you can use CSS media queries along with JavaScript. First, check if the device screen width is less than 650 pixels. If it is, set the display property of the orientationMessage element to "flex". This way, the dialog will appear only for mobile devices. 📱👍
 
@@ -388,6 +391,7 @@ There are no major differences between the local (Gitpod) version and the deploy
 [TinyPNG](https://tinypng.com/), is used to reduce images.
 [CSSUiverse ](https://uiverse.io/SelfMadeSystem/pretty-treefrog-77) is used for some styles,
 Backgraun video is reduce with [HandBrake](https://handbrake.fr/) and Microsoft ClipBar are used to optimize the backdrop video, which is downloaded from [YouTube](https://www.youtube.com/), so that it loads quickly and plays smoothly. Techniques for picture reduction are also used to maximize performance throughout the website. [Freesound](https://freesound.org/search/?q=creepy+music),is used for sound of games,
+[YouTube](https://www.youtube.com/watch?v=FyZ4_T0GZ1U&list=PLFyq0DiDOF4H3WP1fQRpKL3IT2aED6WmA&index=3), You tube video is used for game idea itself.
 
 ***
 ### Acknowledgements
