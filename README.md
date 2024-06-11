@@ -374,7 +374,7 @@ There are no major differences between the local (Gitpod) version and the deploy
 
 ## Credits
 ***
-
+  - [Code Institute](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm), Learning.
   - [Stak Overflow](https://stackoverflow.com/), is used for solving bugs.
   - [W3 schools](https://www.w3schools.com/js/default.asp), is used to repeat  JavaScript.
   - [Freecodecamp](https://www.freecodecamp.org/learn), learning through a project.
@@ -383,7 +383,7 @@ There are no major differences between the local (Gitpod) version and the deploy
   - [Perplexity](https://www.perplexity.ai/?login-source=oneTapHome), is used to explain functions.
   - [Javascript.INFO](https://javascript.info/object-methods), learning JavaScript
   - [Balsamiq](https://balsamiq.com/wireframes/), is used for wireframes.
-
+  - [Slack](https://slack.com/workspace-signin), is used for help,
 
 ### Media
 
