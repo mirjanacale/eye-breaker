@@ -382,7 +382,7 @@ There are no major differences between the local (Gitpod) version and the deploy
   - [Future in Tech](https://ictskillnet.ie/courses/),  School.
   - [Perplexity](https://www.perplexity.ai/?login-source=oneTapHome), is used to explain functions.
   - [Javascript.INFO](https://javascript.info/object-methods), learning JavaScript
-  - [Balsamiq](https://balsamiq.com/wireframes/),is used for wireframes.
+  - [Balsamiq](https://balsamiq.com/wireframes/), is used for wireframes.
 
 
 ### Media
@@ -390,7 +390,7 @@ There are no major differences between the local (Gitpod) version and the deploy
 ***
 [TinyPNG](https://tinypng.com/), is used to reduce images.
 [CSSUiverse ](https://uiverse.io/SelfMadeSystem/pretty-treefrog-77) is used for some styles,
-Backgraun video is reduce with [HandBrake](https://handbrake.fr/) and Microsoft ClipBar are used to optimize the backdrop video, which is downloaded from [YouTube](https://www.youtube.com/), so that it loads quickly and plays smoothly. Techniques for picture reduction are also used to maximize performance throughout the website. [Freesound](https://freesound.org/search/?q=creepy+music),is used for sound of games,
+Backgraun video is reduce with [HandBrake](https://handbrake.fr/) and Microsoft ClipBar are used to optimize the backdrop video, which is downloaded from [YouTube](https://www.youtube.com/), so that it loads quickly and plays smoothly. Techniques for picture reduction are also used to maximize performance throughout the website. [Freesound](https://freesound.org/search/?q=creepy+music), is used for sound of games,
 [YouTube](https://www.youtube.com/watch?v=FyZ4_T0GZ1U&list=PLFyq0DiDOF4H3WP1fQRpKL3IT2aED6WmA&index=3), You tube video is used for game idea itself.
 
 ***
