@@ -26,7 +26,7 @@ Eye-bracker is a arcade game where the player controls a paddle to deflect a bou
 ***
 
 * Enter your name on the start screen.
-* Click the "Start Breaking" button.
+* Click the "Start Breacking" button.
 * If you're on a mobile device, turn your device horizontally for the best experience.
 * Use the arrow keys or touch controls to move the paddle left and right.
 * Bounce the eyeball to break all the blocks.
