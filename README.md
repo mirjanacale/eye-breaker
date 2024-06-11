@@ -227,14 +227,6 @@ I started by creating a wireframe for my website and then I began coding in HTML
 
 
 
-
-
-
-
-
-
-
-
 ##  Browser  Compatibility
 
 Eye bracker is designed to be compatible with  Google Chrome, Mozilla Firefox, Microsoft Edge.
@@ -251,7 +243,7 @@ Eye bracker is designed to be compatible with different device sizes.
 
 | Size     | Intedend appearance | Intended responsiveness | Screenshot |
 | -------- | :-----------------: | -----------------------:| :--------: |
-| Mobile   |      Yes            |              Yes        | ![mobil](readme-img/Screenshot26.png)      |
+| Mobile   |      Yes            |              Yes        | ![mobil](readme-img/message650.png)      |
 | Tablet   |      Yes            |              Yes        | ![tablet](readme-img/tablet.png)      |
 | Desktop  |      Yes            |              Yes        | ![desktop](readme-img/desktop.png)      |
 
@@ -300,10 +292,6 @@ The following tools were used for JSHint validation:
 
 
 
-
-
-
-
 ## Lighthouse Testing
 ***
 
@@ -329,18 +317,6 @@ There are currently no known unfixed bugs in the codebase. Apart from the Video 
  - To display the orientation message only on mobile devices, you can use CSS media queries along with JavaScript. First, check if the device screen width is less than 650 pixels. If it is, set the display property of the orientationMessage element to "flex". This way, the dialog will appear only for mobile devices. 📱👍
 
 ![bugs](readme-img/message650.png)
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -391,26 +367,27 @@ You can fork this repository by using the following steps:
 
 There are no major differences between the local (Gitpod) version and the deployed (GitHub Pages) version that I'm aware of.
 
+
+
 ## Credits
 ***
 
-  [Future in Tech](https://ictskillnet.ie/courses/),
-
- Site, and they enhance the website's visual appeal and functionality.
-
-
- Amy Richardson 
-
+  - [Stak Overflow](https://stackoverflow.com/), is used for solving bugs.
+  - [W3 schools](https://www.w3schools.com/js/default.asp), is used to repeat  JavaScript.
+  - [Freecodecamp](https://www.freecodecamp.org/learn), learning through a project.
+  - [JavaScript](https://devdocs.io/javascript-array/), learning JavaScript.
+  - [Future in Tech](https://ictskillnet.ie/courses/),  School.
+  - [Perplexity](https://www.perplexity.ai/?login-source=oneTapHome), is used to explain functions.
+  - [Javascript.INFO](https://javascript.info/object-methods), learning JavaScript
+  - [Balsamiq](https://balsamiq.com/wireframes/),is used for wireframes.
 
 
 ### Media
 
 ***
- [TinyPNG](https://tinypng.com/), is used to reduce images.
-
-
+[TinyPNG](https://tinypng.com/), is used to reduce images.
 [CSSUiverse ](https://uiverse.io/SelfMadeSystem/pretty-treefrog-77) is used for some styles,
-Backgraun video is reduce with [HandBrake](https://handbrake.fr/) and Microsoft ClipBar are used to optimize the backdrop video, which is downloaded from [YouTube](https://www.youtube.com/), so that it loads quickly and plays smoothly. Techniques for picture reduction are also used to maximize performance throughout the website.
+Backgraun video is reduce with [HandBrake](https://handbrake.fr/) and Microsoft ClipBar are used to optimize the backdrop video, which is downloaded from [YouTube](https://www.youtube.com/), so that it loads quickly and plays smoothly. Techniques for picture reduction are also used to maximize performance throughout the website. [Freesound](https://freesound.org/search/?q=creepy+music),is used for sound of games,
 
 ***
 ### Acknowledgements
